@@ -23,3 +23,140 @@
 @media(max-width:680px){
   .publication-item{grid-template-columns:1fr;gap:10px;padding:28px 0}
 }
+
+
+/* Teaching */
+.teaching-section{background:#fff}
+.teaching-card{
+  border:1px solid #e0e5eb;
+  border-radius:20px;
+  padding:28px;
+  background:linear-gradient(145deg,#ffffff,#fafbfd);
+  box-shadow:0 14px 36px rgba(17,24,39,.05)
+}
+.teaching-top{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:24px
+}
+.experience-period{
+  display:inline-block;
+  color:#355f88;
+  font-weight:800;
+  font-size:.85rem;
+  margin-bottom:7px
+}
+.teaching-card h3{
+  margin:0;
+  font-size:1.55rem;
+  letter-spacing:-.02em
+}
+.experience-tag{
+  display:inline-flex;
+  align-items:center;
+  padding:7px 11px;
+  border-radius:999px;
+  background:#eef3f8;
+  color:#526174;
+  font-size:.75rem;
+  font-weight:800;
+  white-space:nowrap
+}
+.teaching-description{
+  color:#667085;
+  margin:24px 0 14px
+}
+.course-list{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px
+}
+.course-list span{
+  padding:8px 12px;
+  border-radius:999px;
+  background:#111827;
+  color:#fff;
+  font-size:.84rem;
+  font-weight:700
+}
+
+/* Skills */
+.skills-section{
+  background:#f0f3f6;
+  border-top:1px solid #e2e7ed
+}
+.skills-heading{
+  display:grid;
+  grid-template-columns:.72fr 1.28fr;
+  gap:72px;
+  align-items:end;
+  margin-bottom:42px
+}
+.skills-heading>p{
+  margin:0;
+  color:#667085;
+  font-size:1.04rem;
+  max-width:700px
+}
+.skills-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px
+}
+.skill-group{
+  background:#fff;
+  border:1px solid #e0e5eb;
+  border-radius:18px;
+  padding:25px;
+  min-height:210px
+}
+.featured-skill{
+  grid-column:span 2
+}
+.skill-group-header{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-bottom:24px
+}
+.skill-icon{
+  width:34px;
+  height:34px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:9px;
+  background:#111827;
+  color:#fff;
+  font-size:.73rem;
+  font-weight:800
+}
+.skill-group h3{
+  margin:0;
+  font-size:1.25rem
+}
+.skill-pills{
+  display:flex;
+  flex-wrap:wrap;
+  gap:9px
+}
+.skill-pills span{
+  display:inline-flex;
+  padding:8px 11px;
+  border-radius:9px;
+  border:1px solid #dde3ea;
+  background:#f8fafc;
+  color:#475467;
+  font-size:.86rem;
+  font-weight:650
+}
+
+@media(max-width:900px){
+  .skills-heading{grid-template-columns:1fr;gap:22px}
+}
+@media(max-width:680px){
+  .teaching-top{flex-direction:column}
+  .skills-grid{grid-template-columns:1fr}
+  .featured-skill{grid-column:auto}
+}
