@@ -203,3 +203,130 @@
 @media(max-width:760px){
   .language-grid{grid-template-columns:1fr}
 }
+
+
+/* Stage 9 — profiles + refined contact */
+.hero-profiles{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:28px
+}
+.hero-profiles a{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:9px 12px;
+  border:1px solid #dbe2ea;
+  border-radius:999px;
+  background:rgba(255,255,255,.72);
+  text-decoration:none;
+  color:#536174;
+  font-size:.82rem;
+  font-weight:750;
+  transition:.2s
+}
+.hero-profiles a:visited{color:#536174}
+.hero-profiles a:hover{
+  transform:translateY(-2px);
+  background:#fff;
+  color:#111827
+}
+.hero-profiles svg{
+  width:17px;
+  height:17px;
+  fill:#536174
+}
+.hero-profiles svg .cut,
+.profile-icon svg .cut{
+  fill:#fff
+}
+
+.contact-heading{
+  display:grid;
+  grid-template-columns:.72fr 1.28fr;
+  gap:72px;
+  align-items:end;
+  margin-bottom:38px
+}
+.contact-heading>p{
+  margin:0;
+  color:#b7c0cc;
+  max-width:700px;
+  font-size:1.04rem
+}
+.contact-profile-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:14px
+}
+.contact-profile-card{
+  display:grid;
+  grid-template-columns:44px 1fr auto;
+  align-items:center;
+  gap:14px;
+  padding:18px;
+  border:1px solid #2b3545;
+  border-radius:16px;
+  background:#151e2c;
+  color:#fff;
+  text-decoration:none;
+  transition:.2s
+}
+.contact-profile-card:visited{color:#fff}
+.contact-profile-card:hover{
+  transform:translateY(-3px);
+  border-color:#5a6d86;
+  background:#182333
+}
+.profile-icon{
+  width:42px;
+  height:42px;
+  border-radius:12px;
+  display:grid;
+  place-items:center;
+  background:#243044;
+  color:#fff;
+  font-size:.78rem;
+  font-weight:900
+}
+.profile-icon svg{
+  width:21px;
+  height:21px;
+  fill:#dfe7f1
+}
+.contact-profile-card span{
+  display:block;
+  color:#9eacbd;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  font-size:.72rem;
+  margin-bottom:2px
+}
+.contact-profile-card strong{
+  display:block;
+  font-size:.96rem;
+  overflow-wrap:anywhere
+}
+.contact-profile-card>b{
+  font-size:1.05rem;
+  color:#8fa2ba
+}
+.contact-note{
+  margin-top:26px;
+  padding-top:22px;
+  border-top:1px solid #263143;
+  color:#8997aa;
+  font-size:.87rem
+}
+
+/* Reduce crowded navigation slightly */
+.nav-links{gap:24px}
+
+@media(max-width:900px){
+  .contact-heading{grid-template-columns:1fr;gap:20px}
+}
+@media(max-width:720px){
+  .contact-profile-grid{grid-template-columns:1fr}
+}
