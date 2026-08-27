@@ -1,91 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Personal academic website of Ali Rezaei" />
-  <title>Ali Rezaei | Academic Website</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal academic website of Ali Rezaei">
+  <title>Ali Rezaei | PhD Researcher</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="#home">Ali Rezaei</a>
+    <button class="menu-toggle" aria-label="Open navigation"><span></span><span></span><span></span></button>
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
 
-  <header class="navbar">
-    <div class="container nav-inner">
-      <a class="logo" href="#home">Ali Rezaei</a>
-      <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#contact">Contact</a>
-      </nav>
+<main>
+<section id="home" class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <p class="kicker">PhD Researcher</p>
+      <h1>Ali Rezaei</h1>
+      <p class="hero-role">Laser Ultrasound <span>·</span> Photoacoustics <span>·</span> 2D Materials</p>
+      <p class="hero-intro">I am a PhD researcher working on laser-generated ultrasound, photoacoustic emitters, two-dimensional materials, and functional composite systems.</p>
+      <div class="hero-actions">
+        <a class="btn btn-dark" href="#about">About Me</a>
+        <a class="btn btn-light" href="#research">My Research</a>
+      </div>
     </div>
-  </header>
 
-  <main>
-    <section id="home" class="hero">
-      <div class="container hero-content">
-        <p class="eyebrow">PhD Researcher</p>
-        <h1>Ali Rezaei</h1>
-        <h2>Laser Ultrasound · Photoacoustics · 2D Materials</h2>
-        <p class="hero-text">
-          Welcome to my academic website. This site is currently under development.
-        </p>
-        <div class="hero-actions">
-          <a class="btn primary" href="#about">About Me</a>
-          <a class="btn secondary" href="#contact">Contact</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="section">
-      <div class="container narrow">
-        <p class="section-label">About</p>
-        <h2>About Me</h2>
-        <p>
-          I am a PhD researcher working at the intersection of laser-generated ultrasound,
-          photoacoustics, two-dimensional materials, and functional composites.
-        </p>
-      </div>
-    </section>
-
-    <section id="research" class="section alt">
-      <div class="container">
-        <p class="section-label">Research</p>
-        <h2>Research Interests</h2>
-        <div class="cards">
-          <article class="card">
-            <h3>Laser Ultrasound</h3>
-            <p>Generation and characterization of broadband acoustic waves using optical excitation.</p>
-          </article>
-          <article class="card">
-            <h3>2D Materials</h3>
-            <p>Graphene, MoS₂, and related materials for photothermal and optoacoustic applications.</p>
-          </article>
-          <article class="card">
-            <h3>Photoacoustics</h3>
-            <p>Optical-to-acoustic energy conversion in thin films and composite emitters.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section">
-      <div class="container narrow">
-        <p class="section-label">Contact</p>
-        <h2>Contact</h2>
-        <p>
-          Contact information and academic profile links will be added in the next steps.
-        </p>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container">
-      <p>© <span id="year"></span> Ali Rezaei</p>
+    <div class="hero-photo-wrap">
+      <div class="photo-backdrop"></div>
+      <img src="assets/images/profile.jpg" alt="Ali Rezaei" class="hero-photo">
+      <div class="photo-label"><span class="status-dot"></span>Academic & Research Profile</div>
     </div>
-  </footer>
+  </div>
+</section>
 
-  <script src="script.js"></script>
+<section id="about" class="section">
+  <div class="container section-grid">
+    <div>
+      <p class="section-kicker">About</p>
+      <h2>About Me</h2>
+    </div>
+    <div class="section-copy">
+      <p>My research focuses on the interaction of laser light with advanced materials for the generation of high-frequency acoustic waves. I am particularly interested in photoacoustic and optoacoustic conversion using two-dimensional materials and polymer-based composite structures.</p>
+    </div>
+  </div>
+</section>
+
+<section id="research" class="section section-soft">
+  <div class="container">
+    <p class="section-kicker">Research</p>
+    <h2>Research Interests</h2>
+    <div class="research-grid">
+      <article class="research-card"><span class="card-number">01</span><h3>Laser-Generated Ultrasound</h3><p>Broadband acoustic-wave generation through pulsed optical excitation.</p></article>
+      <article class="research-card"><span class="card-number">02</span><h3>Photoacoustics</h3><p>Optical-to-thermal-to-acoustic energy conversion in thin-film emitters.</p></article>
+      <article class="research-card"><span class="card-number">03</span><h3>2D Materials</h3><p>Graphene, MoS₂, and related materials for advanced photothermal systems.</p></article>
+      <article class="research-card"><span class="card-number">04</span><h3>Functional Composites</h3><p>Polymer-based composite structures for efficient optoacoustic generation.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section contact-section">
+  <div class="container contact-box">
+    <div><p class="section-kicker">Contact</p><h2>Let's connect.</h2></div>
+    <p>Contact details, Google Scholar, ORCID, ResearchGate, LinkedIn, publications, and CV will be added in the next steps.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer-inner"><span>© <span id="year"></span> Ali Rezaei</span><span>Academic Website</span></div>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
