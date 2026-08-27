@@ -160,3 +160,46 @@
   .skills-grid{grid-template-columns:1fr}
   .featured-skill{grid-column:auto}
 }
+
+
+/* CV button */
+.btn-cv{
+  color:#355f88;
+  background:rgba(238,243,248,.9);
+  border:1px solid #cdd8e3
+}
+.btn-cv:visited{color:#355f88}
+
+/* Languages */
+.languages-section{background:#fff;border-top:1px solid #e6eaf0}
+.language-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.language-card{
+  padding:22px;
+  border:1px solid #e0e5eb;
+  border-radius:16px;
+  background:#fafbfc;
+  min-height:140px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center
+}
+.language-card span{
+  color:#7a8594;
+  font-size:.78rem;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  margin-bottom:6px
+}
+.language-card strong{
+  font-size:1.2rem;
+  color:#111827
+}
+.language-card small{
+  margin-top:7px;
+  color:#667085;
+  font-size:.82rem
+}
+
+@media(max-width:760px){
+  .language-grid{grid-template-columns:1fr}
+}
