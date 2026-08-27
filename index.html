@@ -8,7 +8,7 @@
 <meta content="index, follow" name="robots"/>
 <meta content="#0b1220" name="theme-color"/>
 <link href="favicon.svg" rel="icon" type="image/svg+xml"/>
-<link href="style-v28.css" rel="stylesheet"/>
+<link href="style-v29.css" rel="stylesheet"/>
 <meta content="Academic website of Ali Rezaei, PhD researcher in Mechanical Engineering at the University of Ljubljana, working on laser ultrasonics, photoacoustics, 2D materials, and multiphysics modelling." name="description"/>
 <title>Ali Rezaei | PhD Researcher</title>
 <link href="https://alicfc4.github.io/" rel="canonical"/><meta content="Ali Rezaei | PhD Researcher" property="og:title"/><meta content="website" property="og:type"/><meta content="https://alicfc4.github.io/" property="og:url"/><meta content="https://alicfc4.github.io/profile.jpg" property="og:image"/><meta content="Academic website of Ali Rezaei, PhD researcher in Mechanical Engineering at the University of Ljubljana, working on laser ultrasonics, photoacoustics, 2D materials, and multiphysics modelling." property="og:description"/><meta content="light dark" name="color-scheme"/><meta content="960" property="og:image:width"/><meta content="1280" property="og:image:height"/><meta content="Ali Rezaei" property="og:site_name"/><meta content="summary_large_image" name="twitter:card"/><meta content="Ali Rezaei | PhD Researcher" name="twitter:title"/><meta content="Academic website of Ali Rezaei, PhD researcher in Mechanical Engineering at the University of Ljubljana, working on laser ultrasonics, photoacoustics, 2D materials, and multiphysics modelling." name="twitter:description"/><meta content="https://alicfc4.github.io/profile.jpg" name="twitter:image"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Ali Rezaei", "url": "https://alicfc4.github.io/", "image": "https://alicfc4.github.io/profile.jpg", "jobTitle": "PhD Researcher", "email": "mailto:ali.rezaei@fs.uni-lj.si", "affiliation": {"@type": "CollegeOrUniversity", "name": "University of Ljubljana", "department": "Faculty of Mechanical Engineering"}, "sameAs": ["https://orcid.org/0009-0006-3180-2702", "https://si.linkedin.com/in/ali-rezaei-phys", "https://www.researchgate.net/profile/Ali-Rezaei-67", "https://github.com/alicfc4"], "knowsAbout": ["Laser ultrasonics", "Photoacoustics", "Two-dimensional materials", "Graphene", "Multiphysics modelling"]}</script><meta content="v28-clean-locked" name="site-version"/></head>
@@ -46,8 +46,39 @@
 </header>
 <div aria-hidden="true" class="mobile-nav-backdrop"></div>
 <main id="main-content">
-<section class="hero">
+<section class="hero hero-v29">
 <div class="shell hero-layout">
+<div aria-hidden="true" class="hero-science-bg">
+<svg focusable="false" role="presentation" viewbox="0 0 760 520">
+<defs>
+<lineargradient id="waveFade" x1="0" x2="1">
+<stop offset="0%" stop-color="currentColor" stop-opacity="0"></stop>
+<stop offset="18%" stop-color="currentColor" stop-opacity=".22"></stop>
+<stop offset="82%" stop-color="currentColor" stop-opacity=".22"></stop>
+<stop offset="100%" stop-color="currentColor" stop-opacity="0"></stop>
+</lineargradient>
+<radialgradient id="pulseGlow">
+<stop offset="0%" stop-color="currentColor" stop-opacity=".18"></stop>
+<stop offset="100%" stop-color="currentColor" stop-opacity="0"></stop>
+</radialgradient>
+</defs>
+<circle class="science-pulse science-pulse-a" cx="570" cy="130" fill="url(#pulseGlow)" r="118"></circle>
+<circle class="science-pulse science-pulse-b" cx="650" cy="350" fill="url(#pulseGlow)" r="92"></circle>
+<path class="science-wave wave-a" d="M40 330 C110 330 120 280 170 280 C220 280 225 390 285 390 C345 390 350 235 410 235 C470 235 475 355 540 355 C605 355 610 300 720 300" fill="none" stroke="url(#waveFade)" stroke-width="2"></path>
+<path class="science-wave wave-b" d="M70 390 C130 390 145 350 200 350 C255 350 265 425 325 425 C385 425 395 320 455 320 C515 320 530 380 700 380" fill="none" stroke="url(#waveFade)" stroke-width="1.2"></path>
+<g class="science-dots">
+<circle cx="480" cy="86" r="3"></circle>
+<circle cx="510" cy="112" r="2"></circle>
+<circle cx="545" cy="76" r="2"></circle>
+<circle cx="610" cy="102" r="2.6"></circle>
+<circle cx="665" cy="145" r="2"></circle>
+<circle cx="586" cy="196" r="2"></circle>
+<circle cx="704" cy="245" r="2.5"></circle>
+<circle cx="646" cy="280" r="2"></circle>
+</g>
+</svg>
+</div>
+
 <div class="hero-copy reveal">
 <div class="availability-chip">
 <span class="availability-dot"></span>
@@ -81,6 +112,14 @@
 <span class="mini-icon">RG</span>
           ResearchGate
         </a>
+</div>
+
+<div aria-label="Research conversion pathway" class="hero-mini-visual">
+<span><i class="visual-dot"></i> Optical pulse</span>
+<b>→</b>
+<span>2D absorber</span>
+<b>→</b>
+<span>Acoustic wave</span>
 </div>
 <p class="hero-meta-line">
         University of Ljubljana · Faculty of Mechanical Engineering · LASTEH
@@ -136,7 +175,7 @@
 </div>
 <div class="home-explore-grid">
 <a class="home-explore-card reveal" href="research.html">
-<span class="explore-number">01</span>
+<span class="explore-number">01</span><span class="explore-orbit"></span>
 <div>
 <h3>Research</h3>
 <p>Current projects, research interests, and scientific focus.</p>
@@ -144,7 +183,7 @@
 <b>↗</b>
 </a>
 <a class="home-explore-card reveal" href="publications.html">
-<span class="explore-number">02</span>
+<span class="explore-number">02</span><span class="explore-orbit"></span>
 <div>
 <h3>Publications</h3>
 <p>Journal articles and conference contributions.</p>
@@ -152,7 +191,7 @@
 <b>↗</b>
 </a>
 <a class="home-explore-card reveal" href="experience.html">
-<span class="explore-number">03</span>
+<span class="explore-number">03</span><span class="explore-orbit"></span>
 <div>
 <h3>Experience</h3>
 <p>Teaching, technical skills, and academic activity.</p>
@@ -195,5 +234,5 @@
 <button aria-label="Back to top" class="back-to-top" type="button">↑</button>
 <div aria-hidden="true" class="page-transition"></div>
 <button aria-label="Back to top" class="back-to-top" type="button">↑</button>
-<script defer="True" src="script-v28.js"></script></body>
+<script defer="True" src="script-v29.js"></script></body>
 </html>
