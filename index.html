@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Personal academic website of Ali Rezaei">
+  <meta name="author" content="Ali Rezaei">
   <title>Ali Rezaei | PhD Researcher</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -11,10 +12,13 @@
 <header class="site-header">
   <div class="container nav-wrap">
     <a class="brand" href="#home">Ali Rezaei</a>
-    <button class="menu-toggle" aria-label="Open navigation"><span></span><span></span><span></span></button>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
     <nav class="nav-links">
       <a href="#home">Home</a>
       <a href="#about">About</a>
+      <a href="#education">Education</a>
       <a href="#research">Research</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -28,7 +32,10 @@
       <p class="kicker">PhD Researcher</p>
       <h1>Ali Rezaei</h1>
       <p class="hero-role">Laser Ultrasound <span>·</span> Photoacoustics <span>·</span> 2D Materials</p>
-      <p class="hero-intro">I am a PhD researcher working on laser-generated ultrasound, photoacoustic emitters, two-dimensional materials, and functional composite systems.</p>
+      <p class="hero-intro">
+        PhD researcher in Mechanical Engineering at the University of Ljubljana and
+        member of the Laboratory for Laser Techniques (LASTEH).
+      </p>
       <div class="hero-actions">
         <a class="btn btn-dark" href="#about">About Me</a>
         <a class="btn btn-light" href="#research">My Research</a>
@@ -49,36 +56,157 @@
       <p class="section-kicker">About</p>
       <h2>About Me</h2>
     </div>
-    <div class="section-copy">
-      <p>My research focuses on the interaction of laser light with advanced materials for the generation of high-frequency acoustic waves. I am particularly interested in photoacoustic and optoacoustic conversion using two-dimensional materials and polymer-based composite structures.</p>
+    <div class="section-copy about-copy">
+      <p>
+        I am a PhD researcher in Mechanical Engineering at the University of Ljubljana
+        and a member of the LASTEH (Laboratory for Laser Techniques) research group.
+        My research focuses on low-dimensional-based nanomaterials, laser ultrasonics,
+        photoacoustics, and nanomaterial-based piezophotonic composites.
+      </p>
+      <p>
+        I have experience in both experimental and computational research, scientific
+        publishing, and interdisciplinary collaboration, with strong skills in numerical
+        modeling, scientific programming, and optical measurement techniques.
+      </p>
+
+      <div class="facts-grid">
+        <div class="fact">
+          <span>Current position</span>
+          <strong>PhD Researcher</strong>
+        </div>
+        <div class="fact">
+          <span>University</span>
+          <strong>University of Ljubljana</strong>
+        </div>
+        <div class="fact">
+          <span>Field</span>
+          <strong>Mechanical Engineering</strong>
+        </div>
+        <div class="fact">
+          <span>Research group</span>
+          <strong>LASTEH</strong>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<section id="research" class="section section-soft">
+<section id="education" class="section section-soft">
+  <div class="container">
+    <p class="section-kicker">Background</p>
+    <h2>Education</h2>
+
+    <div class="timeline">
+      <article class="timeline-item">
+        <div class="timeline-meta">
+          <span class="degree-year">2024 – Present</span>
+          <span class="degree-badge">PhD</span>
+        </div>
+        <div>
+          <h3>Mechanical Engineering</h3>
+          <p class="institution">University of Ljubljana, Slovenia</p>
+          <p class="thesis">Two-dimensional materials-based piezophotonic composites for laser ultrasound generation</p>
+        </div>
+      </article>
+
+      <article class="timeline-item">
+        <div class="timeline-meta">
+          <span class="degree-year">2020 – 2023</span>
+          <span class="degree-badge">MSc</span>
+        </div>
+        <div>
+          <h3>Optics–Laser Physics</h3>
+          <p class="institution">University of Isfahan, Iran</p>
+          <p class="thesis">Investigation of Klein tunneling effect in the presence of tilted Dirac cones</p>
+        </div>
+      </article>
+
+      <article class="timeline-item">
+        <div class="timeline-meta">
+          <span class="degree-year">2016 – 2020</span>
+          <span class="degree-badge">BSc</span>
+        </div>
+        <div>
+          <h3>Physics</h3>
+          <p class="institution">University of Isfahan, Iran</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="research" class="section">
   <div class="container">
     <p class="section-kicker">Research</p>
     <h2>Research Interests</h2>
+
     <div class="research-grid">
-      <article class="research-card"><span class="card-number">01</span><h3>Laser-Generated Ultrasound</h3><p>Broadband acoustic-wave generation through pulsed optical excitation.</p></article>
-      <article class="research-card"><span class="card-number">02</span><h3>Photoacoustics</h3><p>Optical-to-thermal-to-acoustic energy conversion in thin-film emitters.</p></article>
-      <article class="research-card"><span class="card-number">03</span><h3>2D Materials</h3><p>Graphene, MoS₂, and related materials for advanced photothermal systems.</p></article>
-      <article class="research-card"><span class="card-number">04</span><h3>Functional Composites</h3><p>Polymer-based composite structures for efficient optoacoustic generation.</p></article>
+      <article class="research-card">
+        <span class="card-number">01</span>
+        <h3>Photoacoustics & Laser Ultrasonics</h3>
+        <p>Generation, propagation, and characterization of broadband acoustic waves using pulsed optical excitation.</p>
+      </article>
+
+      <article class="research-card">
+        <span class="card-number">02</span>
+        <h3>Graphene & 2D Materials</h3>
+        <p>Low-dimensional materials for photothermal conversion and advanced optoacoustic emitters.</p>
+      </article>
+
+      <article class="research-card">
+        <span class="card-number">03</span>
+        <h3>Piezophotonic & Thermoelastic Composites</h3>
+        <p>Nanomaterial–polymer composite architectures for efficient optical-to-acoustic conversion.</p>
+      </article>
+
+      <article class="research-card">
+        <span class="card-number">04</span>
+        <h3>Ultrafast Laser–Matter Interaction</h3>
+        <p>Fast energy deposition and coupled optical, thermal, and mechanical processes.</p>
+      </article>
+
+      <article class="research-card">
+        <span class="card-number">05</span>
+        <h3>Wave Propagation & NDT</h3>
+        <p>Acoustic-wave propagation and applications related to non-destructive testing.</p>
+      </article>
+
+      <article class="research-card">
+        <span class="card-number">06</span>
+        <h3>Computational Modelling</h3>
+        <p>Multiphysics simulation and scientific computing using COMSOL, MATLAB, and Python.</p>
+      </article>
     </div>
   </div>
 </section>
 
 <section id="contact" class="section contact-section">
   <div class="container contact-box">
-    <div><p class="section-kicker">Contact</p><h2>Let's connect.</h2></div>
-    <p>Contact details, Google Scholar, ORCID, ResearchGate, LinkedIn, publications, and CV will be added in the next steps.</p>
+    <div>
+      <p class="section-kicker">Contact</p>
+      <h2>Let's connect.</h2>
+    </div>
+    <div class="contact-links">
+      <a href="mailto:ali.rezaei@fs.uni-lj.si">
+        <span>Email</span>
+        <strong>ali.rezaei@fs.uni-lj.si</strong>
+      </a>
+      <a href="https://orcid.org/0009-0006-3180-2702" target="_blank" rel="noopener noreferrer">
+        <span>ORCID</span>
+        <strong>0009-0006-3180-2702</strong>
+      </a>
+    </div>
   </div>
 </section>
 </main>
 
 <footer>
-  <div class="container footer-inner"><span>© <span id="year"></span> Ali Rezaei</span><span>Academic Website</span></div>
+  <div class="container footer-inner">
+    <span>© <span id="year"></span> Ali Rezaei</span>
+    <span>Academic Website</span>
+  </div>
 </footer>
+
 <script src="script.js"></script>
 </body>
 </html>
